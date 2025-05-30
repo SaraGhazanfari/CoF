@@ -22,11 +22,11 @@ Moreover, they generate interpretable reasoning traces that accurately refer to 
 <a name="data"></a>
 ### CoF-Data
 
+The figure below summarizes the CoF-Data generation process, which yields our [video annotations](https://huggingface.co/saraghznfri/CoF-models/resolve/main/cof_data.jsonl).
+
 <p float="center">
 <img src="assets/data_generation.png" width="100%">
 </p>
-
-- [Annotation file](https://huggingface.co/saraghznfri/CoF-models/resolve/main/cof_data.jsonl)
 
 <a name="checkpoints"></a>
 ### Checkpoints
@@ -35,6 +35,8 @@ Moreover, they generate interpretable reasoning traces that accurately refer to 
   
 <a name="quick"></a>
 ### Quick Start
+
+The model loading and evaluation procedures are similar to those used in the [InternVL](https://github.com/OpenGVLab/InternVL) repository; please refer to the InternVL documentation for additional details.
 
 - To load our models:
 ```python
@@ -50,7 +52,6 @@ model = AutoModel.from_pretrained(
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True, use_fast=False)
 generation_config = dict(max_new_tokens=2048, do_sample=False)
 ```
-The model loading and evaluation procedures are similar to those used in the [InternVL](https://github.com/OpenGVLab/InternVL) repository; please refer to the InternVL documentation for additional details.
 
 - Evaluation scripts for the video benchmarks:
   
