@@ -1,4 +1,6 @@
-# Chain-of-Frames: Advancing Video Understanding in Multimodal LLMs via Frame-Aware Reasoning
+# Chain-of-Frames
+
+## *Advancing Video Understanding in Multimodal LLMs via Frame-Aware Reasoning*
 
 ### [Paper](https://arxiv.org/abs/2412.10594) | [CoF-Data](#data) | [CoF-Models](#checkpoints) | [Quick Start](#quick) | [Acknowledgements](#ack) 
 
