@@ -71,6 +71,11 @@ We thank the authors for making their work publicly available and contributing t
 <a name="bibtex"></a>
 ### Citation
 If you use our code or models, please consider citing our work using the following BibTex entry:
-```
-?
+```bibtex
+@article{ghazanfari2025chainofframes,
+      title={Chain-of-Frames: Advancing Video Understanding in Multimodal LLMs via Frame-Aware Reasoning}, 
+      author={Sara Ghazanfari and Francesco Croce and Nicolas Flammarion and Prashanth Krishnamurthy and Farshad Khorrami and Siddharth Garg},
+      year={2025},
+      journal={arXiv preprint arxiv:2506.00318} 
+}
 ```
