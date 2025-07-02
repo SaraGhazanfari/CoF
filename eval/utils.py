@@ -187,9 +187,11 @@ def generate_response_for_video(pixel_values, num_patches_list, question, model,
     with torch.no_grad():
         response, history = model.chat(tokenizer, pixel_values, instruction, generation_config,
                                     num_patches_list=num_patches_list, history=None, return_history=True)
-    
+        
+    if 'Question:' in response and '**Reasoning:**' in response:
+        response = response.split('**Reasoning:**')[1]
     return response
-
+    
 def generate_response_for_subtitled_video(pixel_values, num_patches_list, question, model, tokenizer, generation_config, subtitle):
     # pixel_values, num_patches_list = load_video(video_path, num_segments=30, max_num=1)
     pixel_values = pixel_values.to(torch.bfloat16).cuda()
